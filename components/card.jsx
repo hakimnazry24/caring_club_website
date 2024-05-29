@@ -7,6 +7,7 @@ export default function Card({title = "Program Title", imageLink = "https://img.
         <figure>
           <img
             src={imageLink}
+            
           />
         </figure>
         <div className="card-body flex h-full items-center justify-center">
