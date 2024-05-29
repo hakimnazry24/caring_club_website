@@ -1,14 +1,16 @@
+import Card from "@/components/card";
 import Image from "next/image";
 import Link from "next/link";
 import { FaDonate } from "react-icons/fa";
 import { FaPhoneVolume } from "react-icons/fa6";
+import { MdNavigateNext } from "react-icons/md";
 
 export default function Home() {
   return (
     <>
-      <main>
-        <section>
-          <div className="m-20 md:lg:grid grid-cols-2 gap-10 justify-center items-center">
+      <main className="m-20">
+        <section className="h-screen">
+          <div className="md:lg:grid grid-cols-2 gap-10 justify-center items-center">
             <div>
               <h1 className="text-5xl font-semibold mb-5 text-primary">
                 Empowering Orphans, Enriching Lives
@@ -40,6 +42,20 @@ export default function Home() {
                 className="rounded-2xl w-full"
               />
             </div>
+          </div>
+        </section>
+        <section className="h-screen">
+          <h2 className="text-3xl font-semibold text-center">Our Programs</h2>
+          <div className="mt-5 sm:md:grid grid-cols-3 gap-4">
+            <Card></Card>
+            <Card></Card>
+            <Card></Card>
+            <Card></Card>
+            <Card></Card>
+            <Card></Card>
+          </div>
+          <div className="flex justify-end mt-5 hover:opacity-80">
+            <Link href={""}>More <MdNavigateNext className="inline"/></Link>
           </div>
         </section>
         <section>
