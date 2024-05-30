@@ -70,7 +70,73 @@ export default function Home() {
             meaningful.
           </p>
         </section>
-        
+        <section className="m-20">
+          <div className="grid grid-cols-2 gap-10 justify-center items-center">
+            <div>
+              <Image
+                src={"/pic2.jpg"}
+                width={600}
+                height={600}
+                className="w-full rounded-lg shadow-md"
+              />
+            </div>
+            <div>
+              <p className="font-semibold text-lg text-justify">
+                Be a part of the community support that is crucial for the
+                emotional and psychological wellbeing of orphans, helping them
+                develop a sense of belonging, security, and identity, which are
+                essential for their overall development.
+              </p>
+            </div>
+          </div>
+          <div className="grid grid-cols-2 gap-10 justify-center items-center mt-32">
+            <div>
+              <p className="font-semibold text-lg text-justify">
+                Embracing the power of unity to transform the lives of orphans,
+                providing them with a loving support system and access to
+                quality education, healthcare, and emotional well-being.
+              </p>
+            </div>
+            <div>
+              <Image
+                src={"/pic1.jpg"}
+                width={600}
+                height={600}
+                className="w-full rounded-lg shadow-md"
+              />
+            </div>
+          </div>
+          <div className="grid grid-cols-2 gap-10 justify-center items-center mt-32">
+            <div>
+              <Image
+                src={"/pic3.jpg"}
+                width={600}
+                height={600}
+                className="w-full rounded-lg shadow-md"
+              />
+            </div>
+            <div>
+              <p className="font-semibold text-lg text-justify">
+                Embracing the power of unity to transform the lives of orphans,
+                providing them with a loving support system and access to
+                quality education, healthcare, and emotional well-being.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section className="text-center p-40 bg-primary bg-gradient-radial from-primary to-purple-700 text-white ">
+          <h2 className="font-bold text-4xl mb-5">Join the effort to support the welfare of orphans by <br/> <span className="text-accent">contributing to our fund.</span></h2>
+          <div className="flex justify-center">
+            <div className="flex gap-5 mt-10">
+                  <button className="btn btn-accent">
+                    Get In Contact <FaPhoneVolume />
+                  </button>
+                  <button className="btn btn-accent">
+                    Donate <FaDonate />
+                  </button>
+                </div>
+          </div>
+        </section>
       </main>
     </>
   );
