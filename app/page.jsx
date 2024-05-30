@@ -39,7 +39,7 @@ export default function Home() {
                 src={"/orphan.webp"}
                 width={500}
                 height={200}
-                className="rounded-2xl w-full"
+                className="rounded-2xl w-full shadow-md"
               />
             </div>
           </div>
