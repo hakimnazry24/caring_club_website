@@ -8,8 +8,8 @@ import { MdNavigateNext } from "react-icons/md";
 export default function Home() {
   return (
     <>
-      <main className="m-20">
-        <section className="h-screen">
+      <main className="my-20">
+        <section className="h-screen mx-20">
           <div className="md:lg:grid grid-cols-2 gap-10 justify-center items-center">
             <div>
               <h1 className="text-5xl font-semibold mb-5 text-primary">
@@ -44,7 +44,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section className="h-screen">
+        <section className="h-screen mx-20">
           <h2 className="text-3xl font-semibold text-center">Our Programs</h2>
           <div className="mt-5 sm:md:grid grid-cols-3 gap-4">
             <Card></Card>
@@ -55,12 +55,22 @@ export default function Home() {
             <Card></Card>
           </div>
           <div className="flex justify-end mt-5 hover:opacity-80">
-            <Link href={""}>More <MdNavigateNext className="inline"/></Link>
+            <Link href={""}>
+              More <MdNavigateNext className="inline" />
+            </Link>
           </div>
         </section>
-        <section>
-          
+        <section className="text-center p-40 bg-primary bg-gradient-radial from-primary to-purple-700 text-white ">
+          <h2 className="font-bold text-4xl mb-5">Help Us Make A Difference</h2>
+          <p className=" md:lg:mx-16 leading-7 text-sm">
+            Join us in making a difference in the lives of orphaned children.
+            Your support can provide them with essentials like food, education,
+            and healthcare. Together, we can create a brighter future for these
+            deserving young souls. Donate today and be a part of something truly
+            meaningful.
+          </p>
         </section>
+        
       </main>
     </>
   );
